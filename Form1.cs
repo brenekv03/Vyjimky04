@@ -36,6 +36,7 @@ namespace Vyjimky04
                             {
                                 mocnina *= a;
                             }
+                            if (double.IsInfinity(mocnina)) throw new OverflowException();
                             if (b < 0) mocnina = 1 / mocnina;
                         }
                         else mocnina = 1;
